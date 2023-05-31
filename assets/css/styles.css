@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #143c3c;
+    --header-bg: #10375c;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Public Sans", sans-serif;
+}
+/* common */
+
+.container {
+    width: 1140px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+.btn {
+    --height: 57px;
+    display: inline-block;
+    min-width: 173px;
+    background: var(--primary-color);
+
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: var(--height);
+    border: 1px solid var(--primary-color);
+    color: #fff;
+    height: var(--height);
+    text-align: center;
+    border: 1.5px solid #143c3c;
+    border-radius: 40px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.btn-book:hover {
+    background: var(--primary-color);
+}
+.round-point {
+    width: 6px;
+    height: 6px;
+    background: #5f5b53;
+    border-radius: 50%;
+}
+.round-point-active {
+    background: var(--primary-color);
+}
+.round-point-often {
+    background: #634700;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    text-decoration: none;
+}
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+.break-all {
+    word-break: break-all;
+}
+/* Herder */
+.herder {
+    margin-top: 28px;
+}
+
+.herder__nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.herder__top {
+    display: flex;
+    align-items: center;
+}
+.heder__list {
+    display: flex;
+    gap: 38px;
+}
+.heder__item:last-child {
+    margin-right: 88px;
+}
+.heder__link {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.56;
+    color: #575d5e;
+}
+.heder__link--active::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 16px;
+    height: 2px;
+    bottom: -28px;
+    background: var(--primary-color);
+    z-index: 1;
+}
+.heder__link:hover {
+    color: #152427;
+}
+
+.herder__line {
+    display: block;
+    position: absolute;
+    bottom: -28px;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        #ffffff 0%,
+        #dddcdc 51.09%,
+        rgba(213, 213, 213, 0) 99.68%
+    );
+}
+.herder__content {
+    position: relative;
+    margin-top: 137px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding-bottom: 87px;
+}
+.herder__heading {
+    max-width: 368px;
+    font-weight: 800;
+    font-size: 5rem;
+    line-height: 1.2;
+    color: #152427;
+}
+.herder__desc {
+    margin-top: 20px;
+    max-width: 341px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.56;
+    color: #575d5e;
+}
+.herder__cta {
+    margin-top: 42px;
+    display: flex;
+    gap: 36px;
+    align-items: center;
+}
+.herder__pay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 184px;
+    height: 59px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+}
+.herder__images {
+    margin-right: 25px;
+    display: flex;
+    gap: 20px;
+}
+.herder__img {
+    width: 202px;
+    height: 466px;
+    object-fit: cover;
+    border-radius: 110px;
+    z-index: 1;
+}
+.herder__img:last-child,
+.herder__img:first-child {
+    margin-top: -77px;
+}
+
+.herder__img1,
+.herder__img2,
+.herder__img3,
+.herder__img4 {
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+.herder__img1 {
+    top: 0;
+    left: 254px;
+    z-index: 1;
+}
+.herder__img2 {
+    top: -6px;
+    left: 295px;
+}
+
+.herder__img3 {
+    right: 68px;
+    bottom: 18px;
+}
+.herder__img4 {
+    right: 37px;
+    bottom: 57px;
+    z-index: 1;
+}
+.herder__elip {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    background: #4dbb9a;
+    filter: blur(137px);
+    right: 129px;
+    bottom: 90px;
+}
+.brand {
+    margin-top: 43px;
+}
+.brand__images {
+    padding: 76px 121px 78px 121px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e2eddf;
+    border-radius: 100.5px;
+}
+.brand_group {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
