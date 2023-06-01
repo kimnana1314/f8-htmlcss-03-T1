@@ -315,6 +315,7 @@ li {
     transform: matrix(-1, 0, 0, 1, 0, 0);
     color: #152427;
     border: none;
+    transition: 0.25s;
 }
 .service__btn:hover {
     color: #fff;
@@ -535,4 +536,111 @@ li {
     font-size: 1rem;
     line-height: 1.4;
     color: #152427;
+}
+
+.about__group__temr_img {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #ffffff;
+    margin-right: -9px;
+}
+
+.about__group__temr_img:last-child {
+    margin-right: 0px;
+}
+.process {
+    margin-top: 76px;
+}
+.process-content {
+    padding-top: 36px;
+    position: relative;
+}
+.process-content__img {
+    display: block;
+    position: absolute;
+    width: 450px;
+    height: 433px;
+    top: 0;
+    right: 92px;
+    object-fit: cover;
+}
+
+.process-content__heading__titel {
+    max-width: 477px;
+    font-weight: 600;
+    font-size: 4.2rem;
+    line-height: 1.24;
+    color: #152427;
+}
+.process-content__list {
+    margin-top: 81px;
+}
+.process-content__item {
+    position: relative;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    height: 185px;
+}
+.process-content__item:hover {
+    background: #e2eddf;
+    border-radius: 33px;
+}
+
+.process-content__item:hover .process-content__item_line {
+    display: none;
+}
+
+.process-content__item_line {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+        180deg,
+        #83a17d 4.17%,
+        rgba(131, 161, 125, 0) 36.46%
+    );
+}
+
+.process-content__item__index {
+    font-weight: 600;
+    font-size: 7.2rem;
+    line-height: 0.72;
+    color: #143c3c;
+}
+.process-content__item__titel {
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 1;
+    color: #152427;
+}
+.process-content__item__link {
+    display: block;
+    margin-top: 22px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: #575d5e;
+}
+.process-content__item_body {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.process-content__item__desc {
+    max-width: 572px;
+    max-height: 84px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.56;
+
+    color: #7d8188;
 }
