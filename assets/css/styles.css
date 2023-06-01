@@ -826,6 +826,7 @@ li {
 .blog-content__item {
     border-radius: 40px;
     overflow: hidden;
+    transition: 0.25s;
 }
 .blog-content__item:hover {
     background: #fff;
